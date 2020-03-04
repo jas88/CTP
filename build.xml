@@ -55,7 +55,7 @@
 	</target>
 
 	<target name="compile" depends="init">
-		<javac destdir="${build}" optimize="on"
+		<javac target="8" destdir="${build}" optimize="on"
 				classpathref="classpath"
 				includeantruntime="false"
 				debug="true" debuglevel="lines,vars,source">
