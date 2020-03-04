@@ -1,0 +1,8 @@
+dist: bionic
+language: java
+addons:
+  apt:
+    packages:
+      - ant
+script:
+  - ant jar
