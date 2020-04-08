@@ -6,3 +6,11 @@ addons:
       - ant
 script:
   - ant jar
+deploy:
+  provider: releases
+  api_key:
+    secure: secure: "q/+LSxsPDsJZ8umrUXc1t6tHNqkHKPt0sUVYoEmn2YMcryCJSMu1R8PhIp8w1dXvrj3ygGC1Y9DRnNKLsKbebINPdzjBP4KQwbYokDI2zp4RxeZxZZi27jcosrF4W3+Gv0HwbNtPf+23Qs24x3eY7t0JNmCzlKqRaxFKD1ygj5rewN3MaPSMBIl/9Am1ZGLBJhFEEw8a9BSKDUZ4cvGQW0Ed8Aw03G1auDKFaUCS+0Z7ejI+Qlk1WmV9jprdnaiIekAI33vFVIP/z9ED/dUYLBU3aD4NcYbTwe/j9Tt+mNGvDbZks1rULyTkYoEmQ8VnewM/J3zqDRH8KgFtZU6Wi2oncaiXl4Zcp2Lahnluo2UQ85/ZgsLI7S//rE+jSqo9Md7sR0+C6lNeEG9/0aElPCu9vQlZSjWyuFPGI3/P237IcB+EEFFg6QWJbCyiNsIJ5beqYtj599PM5NXwX91ADQq2hYVHyK5n4SaFgFzSHCqxoRgulroD6aAwf9L4eXcuOXD6VWk3lG453Z6qz4D66Gj1Ytmpp+RH9EVhs/naG161J5agAnr5NEhjW8ZZk9DnPfss1PW8WqPIS6Q8eiJL1wcHB4UsS5dTCq834SLSol9NKYjqKQEjvQMN6TNGQDR9l3Fe7csS0dOlJiQU4oGE6ZsvhpAyWza/MiAP9WqUf20="
+  file:
+    - "libraries/CTP.jar"
+    - "libraries/util.jar"
+  skip_cleanup: true
