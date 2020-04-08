@@ -5,7 +5,7 @@ addons:
     packages:
       - ant
 script:
-  - pom package
+  - mvn package
 deploy:
   provider: releases
   api_key:
